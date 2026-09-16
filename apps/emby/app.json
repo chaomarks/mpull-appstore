@@ -9,6 +9,6 @@
   "author": "amilys",
   "image": "amilys/embyserver:4.8.11.0",
   "default_stack_name": "emby",
-  "note": "安装后通过 http://NAS_IP:8096 访问 Emby 控制台。{{docker_root}} 为安装目录占位符，部署时替换为商店设置中配置的路径；{{media_dir}} 为媒体目录占位符，安装时在弹窗输入框填写实际媒体库路径（如 /vol4/1000/media）。环境变量中的代理 172.17.0.1:7890 指向宿主机代理（172.17.0.1 为 docker0 网关），无代理环境可删除这三行。",
+  "note": "安装后通过 http://NAS_IP:8096 访问 Emby 控制台。{{docker_root}} 为安装目录占位符，部署时替换为商店设置中配置的路径；{{media_dir}} 为媒体目录占位符，安装时请在 compose 中把它改为实际媒体库路径（如 /vol4/1000/media）。环境变量中的代理 172.17.0.1:7890 指向宿主机代理（172.17.0.1 为 docker0 网关），无代理环境可删除这三行。",
   "compose_file": "apps/emby/compose.yml"
 }
