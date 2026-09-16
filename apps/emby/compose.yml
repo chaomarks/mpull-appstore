@@ -13,6 +13,6 @@ services:
     volumes:
       - /etc/resolv.conf:/etc/resolv.conf
       - "{{docker_root}}/emby/:/config"
-      - /vol4/1000/media/:/media
+      - "{{media_dir}}/:/media"
     image: amilys/embyserver:4.8.11.0
 networks: {}

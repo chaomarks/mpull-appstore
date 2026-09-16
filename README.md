@@ -47,6 +47,17 @@ volumes:
   - "/vol4/1000/docker/lucky/luckyconf:/app/conf"
 ```
 
+## 自定义占位符（安装者填写）
+
+除 `{{docker_root}}` 外，compose 中可以用任意 `{{名称}}` 占位符（如 `{{media_dir}}`）表示需要安装者自行填写的宿主机路径，媒体目录、下载目录这类因人而异的路径都用这种方式：
+
+```yaml
+volumes:
+  - "{{media_dir}}/:/media"
+```
+
+MPull 安装弹窗会自动识别这些占位符并列出输入框，安装者填写实际路径后替换部署；存在未填写的占位符时会拒绝部署并提示。
+
 ## 如何贡献应用
 
 Fork 本仓库 → 在 `apps/<app-id>/` 下添加 `app.json`（元数据）与 `compose.yml`（部署配置）、`icons/` 放图标、`apps.json` 加索引条目 → 提交 PR。第三方维护者也可以直接维护自己的 fork，并在 MPull 商店设置中添加 fork 仓库地址（格式 `用户名/仓库名`）。
