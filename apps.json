@@ -1,16 +1,30 @@
 {
   "version": 1,
-  "updated_at": "2026-09-16",
+  "updated_at": "2026-09-17",
   "apps": [
     {
       "id": "lucky",
       "name": "Lucky",
       "version": "1.0.0",
       "description": "Lucky 大吉网络工具箱：反向代理、DDNS、端口转发、Web 服务、STUN 内网穿透、计划任务、网络测速等多合一轻量工具",
-      "categories": ["网络工具"],
+      "categories": [
+        "网络工具"
+      ],
       "icon": "icons/lucky.png",
       "author": "gdy666",
       "image": "gdy666/lucky:v3"
+    },
+    {
+      "id": "emby",
+      "name": "Emby",
+      "version": "1.0.0",
+      "description": "Emby 媒体服务器：影音库管理、硬件转码与多端串流播放",
+      "categories": [
+        "媒体服务"
+      ],
+      "icon": "icons/emby.png",
+      "author": "amilys",
+      "image": "amilys/embyserver:4.8.11.0"
     }
   ]
 }
