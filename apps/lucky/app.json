@@ -10,6 +10,6 @@
   "author": "gdy666",
   "image": "gdy666/lucky:v3",
   "default_stack_name": "lucky",
-  "note": "使用 host 网络模式，安装后通过 http://NAS_IP:16601 访问管理页面。安装目录占位符 {{docker_root}} 会在部署时替换为商店设置中配置的路径。",
+  "note": "使用 host 网络模式，安装后通过 http://NAS_IP:16601 访问管理页面。",
   "compose": "version: \"3.3\"\nservices:\n  lucky:\n    container_name: lucky\n    restart: always\n    network_mode: host\n    environment:\n      - PUID=0\n      - PGID=0\n      - UMASK=022\n    volumes:\n      - \"{{docker_root}}/lucky/luckyconf:/app/conf\"\n    image: gdy666/lucky:v3\nnetworks: {}\n"
 }
