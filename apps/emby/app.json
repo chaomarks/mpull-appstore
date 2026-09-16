@@ -10,5 +10,5 @@
   "image": "amilys/embyserver:4.8.11.0",
   "default_stack_name": "emby",
   "note": "安装后通过 http://NAS_IP:8088 访问 Emby 控制台。{{docker_root}} 为安装目录占位符，部署时替换为商店设置中配置的路径；媒体目录 /vol4/1000/media 请按实际媒体库位置修改。环境变量中的代理 172.17.0.1:7890 指向宿主机代理（172.17.0.1 为 docker0 网关），无代理环境可删除这三行。",
-  "compose": "version: \"3.3\"\nservices:\n  embyserver:\n    container_name: emby\n    restart: always\n    network_mode: bridge\n    ports:\n      - 8088:8096\n    environment:\n      - NO_PROXY=172.17.0.1,127.0.0.1,localhost\n      - ALL_PROXY=http://172.17.0.1:7890\n      - HTTPS_PROXY=http://172.17.0.1:7890\n    volumes:\n      - /etc/resolv.conf:/etc/resolv.conf\n      - \"{{docker_root}}/emby/:/config\"\n      - /vol4/1000/media/:/media\n    image: amilys/embyserver:4.8.11.0\nnetworks: {}\n"
+  "compose": "version: \"3.3\"\nservices:\n  embyserver:\n    container_name: emby\n    restart: always\n    network_mode: bridge\n    ports:\n      - 8096:8096\n    environment:\n      - NO_PROXY=172.17.0.1,127.0.0.1,localhost\n      - ALL_PROXY=http://172.17.0.1:7890\n      - HTTPS_PROXY=http://172.17.0.1:7890\n    volumes:\n      - /etc/resolv.conf:/etc/resolv.conf\n      - \"{{docker_root}}/emby/:/config\"\n      - /vol4/1000/media/:/media\n    image: amilys/embyserver:4.8.11.0\nnetworks: {}\n"
 }
