@@ -1,7 +1,6 @@
 {
   "id": "lucky",
   "name": "Lucky",
-  "version": "1.0.0",
   "description": "Lucky 大吉网络工具箱：反向代理、DDNS、端口转发、Web 服务、STUN 内网穿透、计划任务、网络测速等多合一轻量工具",
   "categories": [
     "网络工具"
