@@ -1,7 +1,6 @@
 {
   "id": "emby",
   "name": "Emby",
-  "version": "1.0.0",
   "description": "Emby 媒体服务器：影音库管理、硬件转码与多端串流播放",
   "categories": [
     "媒体服务"
