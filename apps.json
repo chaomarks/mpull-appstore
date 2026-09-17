@@ -23,6 +23,17 @@
       "icon": "icons/emby.png",
       "author": "amilys",
       "image": "amilys/embyserver:4.8.11.0"
+    },
+    {
+      "id": "alist",
+      "name": "Alist",
+      "description": "Alist 文件列表程序：聚合本地存储、网盘、对象存储等多种存储，支持 WebDAV 与在线预览",
+      "categories": [
+        "网盘工具"
+      ],
+      "icon": "icons/alist.png",
+      "author": "xhofe",
+      "image": "xhofe/alist:v3.45.0"
     }
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "id": "alist",
+  "name": "Alist",
+  "description": "Alist 文件列表程序：聚合本地存储、网盘、对象存储等多种存储，支持 WebDAV 与在线预览",
+  "categories": [
+    "网盘工具"
+  ],
+  "icon": "icons/alist.png",
+  "author": "xhofe",
+  "image": "xhofe/alist:v3.45.0",
+  "default_stack_name": "alist",
+  "note": "安装后通过 http://NAS_IP:5244 访问管理页面。首次启动的初始管理员密码请查看容器日志。",
+  "compose_file": "apps/alist/compose.yml"
+}
