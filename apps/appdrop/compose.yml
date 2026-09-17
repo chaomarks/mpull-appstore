@@ -1,0 +1,14 @@
+services:
+  appdrop:
+    image: mark8857857/appdrop:latest
+    container_name: appdrop
+    restart: always
+    network_mode: bridge
+    ports:
+      - "8858:8858"
+    volumes:
+      # {{docker_root}} 部署时自动替换为商店设置中配置的容器安装目录
+      - "{{docker_root}}/appdrop/data:/data"
+    environment:
+      - APPDROP_DATA_DIR=/data
+      - APPDROP_DB_PATH=/data/app.db

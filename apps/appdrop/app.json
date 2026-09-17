@@ -1,0 +1,14 @@
+{
+  "id": "appdrop",
+  "name": "AppDrop",
+  "description": "闪装 AppDrop：自托管的 Android APK 分发与管理工具，包含服务端 Web 管理后台和 Android 客户端。可创建仓库、上传 APK、管理应用图标和版本，并在手机/电视端浏览和下载安装。",
+  "categories": [
+    "开发工具"
+  ],
+  "icon": "icons/appdrop.png",
+  "author": "mark8857857",
+  "image": "mark8857857/appdrop:latest",
+  "default_stack_name": "appdrop",
+  "note": "安装后通过 http://NAS_IP:8858 访问管理后台。",
+  "compose_file": "apps/appdrop/compose.yml"
+}
