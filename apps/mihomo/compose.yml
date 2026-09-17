@@ -11,8 +11,11 @@ services:
     environment:
       - TZ=Asia/Shanghai
       # 三个密钥生成：CMD/SSH 终端执行 openssl rand -hex 16（32 位随机值，比手输 16 位更安全）
+      # SUB_STORE_UI_PASSWORD = Sub-Store 前端登录密码
       - "SUB_STORE_UI_PASSWORD={{SUB_STORE_UI_PASSWORD}}"
+      # SUB_STORE_PUBLIC_TOKEN = 订阅链接的下载/分享令牌
       - "SUB_STORE_PUBLIC_TOKEN={{SUB_STORE_PUBLIC_TOKEN}}"
+      # MIHOMO_SECRET = mihomo 外部控制器/面板连接密钥
       - "MIHOMO_SECRET={{MIHOMO_SECRET}}"
     volumes:
       # {{docker_root}} 部署时自动替换为商店设置中配置的容器安装目录
