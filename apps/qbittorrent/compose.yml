@@ -1,0 +1,21 @@
+services:
+  qbittorrent:
+    container_name: qbittorrent
+    network_mode: bridge
+    restart: always
+    ports:
+      - 8080:8080
+      - 6018:6018
+    environment:
+      - PUID=0
+      - PGID=0
+      - TZ=Asia/Shanghai
+      - WEBUI_PORT=8080
+      - TORRENTING_PORT=6018
+    volumes:
+      # {{docker_root}} 部署时自动替换为设置中配置的容器安装目录
+      - "{{docker_root}}/qbittorrent/config:/config"
+      # {{downloads_dir}} 请改为实际下载目录，如 /vol4/1000/downloads
+      - "{{downloads_dir}}/downloads:/downloads"
+    image: linuxserver/qbittorrent:latest
+networks: {}

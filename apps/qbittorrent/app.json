@@ -1,0 +1,14 @@
+{
+  "id": "qbittorrent",
+  "name": "qBittorrent",
+  "description": "qBittorrent BT/种子下载客户端：轻量无广告，支持 WebUI 远程管理、RSS 订阅与做种",
+  "categories": [
+    "下载工具"
+  ],
+  "icon": "icons/qbittorrent.png",
+  "author": "linuxserver",
+  "image": "linuxserver/qbittorrent:latest",
+  "default_stack_name": "qbittorrent",
+  "note": "安装后通过 http://NAS_IP:8080 访问 WebUI，首次登录的临时密码请查看容器日志；6018 为 BT 传输端口。",
+  "compose_file": "apps/qbittorrent/compose.yml"
+}

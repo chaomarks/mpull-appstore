@@ -6,7 +6,7 @@ services:
     ports:
       - 5244:5244
     volumes:
-      # {{docker_root}} 部署时自动替换为商店设置中配置的容器安装目录
+      # {{docker_root}} 部署时自动替换为设置中配置的容器安装目录
       - "{{docker_root}}/alist:/opt/alist/data"
     environment:
       - PUID=0

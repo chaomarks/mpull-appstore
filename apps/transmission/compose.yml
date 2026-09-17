@@ -1,0 +1,27 @@
+services:
+  transmission:
+    container_name: transmission
+    restart: always
+    network_mode: bridge
+    environment:
+      - PUID=0
+      - PGID=0
+      - TZ=Asia/Shanghai
+      # 必须手动下载 webui 文件，上传到安装目录/transmission/config 内（按实际映射的 /config 目录）
+      # webui 项目下载地址（有 5 个）：https://imnks.com/8670.html
+      - TRANSMISSION_WEB_HOME=/config/web-control
+      # WebUI 登录账号/密码，请自行修改
+      - USER=账号
+      - PASS=密码
+    ports:
+      - 9091:9091
+      - 51413:51413
+      - 51413:51413/udp
+    volumes:
+      # {{docker_root}} 部署时自动替换为设置中配置的容器安装目录
+      - "{{docker_root}}/transmission/config:/config"
+      - "{{docker_root}}/transmission/watch:/watch"
+      # {{downloads_dir}} 请改为实际下载目录，如 /vol4/1000/downloads
+      - "{{downloads_dir}}/downloads:/downloads"
+    image: linuxserver/transmission:4.0.5
+networks: {}

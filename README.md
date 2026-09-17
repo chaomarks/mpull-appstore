@@ -1,6 +1,6 @@
 # MPull App Store
 
-MPull 容器应用商店的应用源仓库。MPull 面板从这里读取应用清单、部署配置和图标。
+MPull 容器模板中心的应用源仓库。MPull 面板从这里读取模板清单、部署配置和图标。
 
 ## 目录结构
 
@@ -33,7 +33,7 @@ compose 文件就是标准 docker compose YAML，在 GitHub 上可直接编辑�
 
 ## 安装目录占位符
 
-compose 中宿主机路径可以用 `{{docker_root}}` 占位符，部署时会替换为用户在 MPull 商店设置中配置的「容器安装目录」，例如用户配置 `/vol4/1000/docker`，则：
+compose 中宿主机路径可以用 `{{docker_root}}` 占位符，部署时会替换为用户在 MPull 设置中配置的「容器安装目录」，例如用户配置 `/vol4/1000/docker`，则：
 
 ```yaml
 volumes:
@@ -60,4 +60,4 @@ MPull 安装弹窗会自动识别这些占位符：安装者直接修改弹窗�
 
 ## 如何贡献应用
 
-Fork 本仓库 → 在 `apps/<app-id>/` 下添加 `app.json`（元数据）与 `compose.yml`（部署配置）、`icons/` 放图标、`apps.json` 加索引条目 → 提交 PR。第三方维护者也可以直接维护自己的 fork，并在 MPull 商店设置中添加 fork 仓库地址（格式 `用户名/仓库名`）。
+Fork 本仓库 → 在 `apps/<app-id>/` 下添加 `app.json`（元数据）与 `compose.yml`（部署配置）、`icons/` 放图标、`apps.json` 加索引条目 → 提交 PR。第三方维护者也可以直接维护自己的 fork，并在 MPull 模板设置中添加 fork 仓库地址（格式 `用户名/仓库名`）。

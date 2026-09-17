@@ -18,6 +18,6 @@ services:
       # MIHOMO_SECRET = mihomo 外部控制器/面板连接密钥
       - "MIHOMO_SECRET={{MIHOMO_SECRET}}"
     volumes:
-      # {{docker_root}} 部署时自动替换为商店设置中配置的容器安装目录
+      # {{docker_root}} 部署时自动替换为设置中配置的容器安装目录
       - "{{docker_root}}/mihomo/config:/root/.config/mihomo"
       - "{{docker_root}}/mihomo/sub-store-data:/opt/sub-store/data"

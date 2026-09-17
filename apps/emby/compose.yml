@@ -12,7 +12,7 @@ services:
       - HTTPS_PROXY=http://172.17.0.1:7890
     volumes:
       - /etc/resolv.conf:/etc/resolv.conf
-      # {{docker_root}} 部署时自动替换为商店设置中配置的容器安装目录
+      # {{docker_root}} 部署时自动替换为设置中配置的容器安装目录
       - "{{docker_root}}/emby/:/config"
       # {{media_dir}} 请改为实际媒体库路径，如 /vol4/1000/media
       - "{{media_dir}}/:/media"

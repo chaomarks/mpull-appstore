@@ -56,6 +56,39 @@
       "icon": "icons/mihomo-sub.png",
       "author": "mark8857857",
       "image": "mark8857857/mihomo-sub:latest"
+    },
+    {
+      "id": "qbittorrent",
+      "name": "qBittorrent",
+      "description": "qBittorrent BT/种子下载客户端：轻量无广告，支持 WebUI 远程管理、RSS 订阅与做种",
+      "categories": [
+        "下载工具"
+      ],
+      "icon": "icons/qbittorrent.png",
+      "author": "linuxserver",
+      "image": "linuxserver/qbittorrent:latest"
+    },
+    {
+      "id": "transmission",
+      "name": "Transmission",
+      "description": "Transmission BT 下载客户端：简洁低占用，支持 Watch 目录自动添加种子，可挂自定义 WebUI 主题",
+      "categories": [
+        "下载工具"
+      ],
+      "icon": "icons/transmission.png",
+      "author": "linuxserver",
+      "image": "linuxserver/transmission:4.0.5"
+    },
+    {
+      "id": "portainer",
+      "name": "Portainer",
+      "description": "Portainer CE 容器管理面板（中文优化版）：Web 界面管理 Docker 容器、镜像、网络与数据卷",
+      "categories": [
+        "容器管理"
+      ],
+      "icon": "icons/portainer.png",
+      "author": "6053537",
+      "image": "6053537/portainer-ce:latest"
     }
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "id": "portainer",
+  "name": "Portainer",
+  "description": "Portainer CE 容器管理面板（中文优化版）：Web 界面管理 Docker 容器、镜像、网络与数据卷",
+  "categories": [
+    "容器管理"
+  ],
+  "icon": "icons/portainer.png",
+  "author": "6053537",
+  "image": "6053537/portainer-ce:latest",
+  "default_stack_name": "portainer",
+  "note": "安装后通过 http://NAS_IP:9000 访问管理界面。",
+  "compose_file": "apps/portainer/compose.yml"
+}
