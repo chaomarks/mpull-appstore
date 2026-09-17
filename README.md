@@ -26,7 +26,7 @@ mpull-appstore/
 | `compose_file` | ✅ | compose 文件路径（相对仓库根目录，如 `apps/lucky/compose.yml`），推荐写法 |
 | `compose` | ➖ | 内联 compose YAML 字符串（旧写法，与 `compose_file` 二选一） |
 | `default_stack_name` | ➖ | 默认 Stack 名，缺省用 `id` |
-| `note` | ➖ | 安装注意事项 |
+| `note` | ➖ | 备注或安装注意事项，支持换行和长文本；GitHub 仓库地址会在 MPull 详情中显示为可点击图标 |
 | `author` / `image` | ➖ | 作者 / 主镜像 |
 
 compose 文件就是标准 docker compose YAML，在 GitHub 上可直接编辑并语法高亮。

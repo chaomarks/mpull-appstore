@@ -9,6 +9,6 @@
   "author": "linuxserver",
   "image": "linuxserver/transmission:4.0.5",
   "default_stack_name": "transmission",
-  "note": "安装后通过 http://NAS_IP:9091 访问 WebUI（账号密码为 USER/PASS，请自行修改）。自定义 WebUI 需手动下载上传，见 compose 注释。",
+  "note": "第三方WebUi项目，可直接替换\n1.Transmission Web Control  ⭐⭐⭐  https://github.com/ronggang/transmission-web-control\n2.jianxcao/transmission-web  ⭐⭐⭐⭐⭐  https://github.com/jianxcao/transmission-web\n3.TrguiNG 汉化版  ⭐⭐⭐⭐  https://github.com/jayzcoder/TrguiNG\n4.Transmission Next UI  ⭐⭐⭐⭐⭐  https://github.com/hisproc/transmission-next-ui\n5.BitCake  ⭐⭐⭐⭐⭐  https://github.com/wenfer/bitcake",
   "compose_file": "apps/transmission/compose.yml"
 }
