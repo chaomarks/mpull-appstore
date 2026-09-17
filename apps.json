@@ -40,11 +40,22 @@
       "name": "AppDrop",
       "description": "闪装 AppDrop：自托管的 Android APK 分发与管理工具，包含服务端 Web 管理后台和 Android 客户端。可创建仓库、上传 APK、管理应用图标和版本，并在手机/电视端浏览和下载安装。",
       "categories": [
-        "开发工具"
+        "网络工具"
       ],
       "icon": "icons/appdrop.png",
       "author": "mark8857857",
       "image": "mark8857857/appdrop:latest"
+    },
+    {
+      "id": "mihomo",
+      "name": "Mihomo Sub",
+      "description": "Mihomo + Sub-Store 二合一：mihomo 代理内核（HTTP/SOCKS 代理 7890、外部控制 9090）与 Sub-Store 订阅管理前端（3002），用于订阅转换与代理管理",
+      "categories": [
+        "网络工具"
+      ],
+      "icon": "icons/mihomo-sub.png",
+      "author": "mark8857857",
+      "image": "mark8857857/mihomo-sub:latest"
     }
   ]
 }

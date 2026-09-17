@@ -1,0 +1,14 @@
+{
+  "id": "mihomo",
+  "name": "Mihomo Sub",
+  "description": "Mihomo + Sub-Store 二合一：mihomo 代理内核（HTTP/SOCKS 代理 7890、外部控制 9090）与 Sub-Store 订阅管理前端（3002），用于订阅转换与代理管理",
+  "categories": [
+    "网络工具"
+  ],
+  "icon": "icons/mihomo-sub.png",
+  "author": "mark8857857",
+  "image": "mark8857857/mihomo-sub:latest",
+  "default_stack_name": "mihomo",
+  "note": "安装后通过 http://NAS_IP:3002 访问 Sub-Store 前端（登录密码为 SUB_STORE_UI_PASSWORD）。三个密钥请在 compose 中填入 openssl rand -hex 16 生成的随机值。",
+  "compose_file": "apps/mihomo/compose.yml"
+}
