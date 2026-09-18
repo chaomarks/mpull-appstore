@@ -1,0 +1,14 @@
+{
+  "id": "mdcx",
+  "name": "MDCX",
+  "description": "一个“小电影”刮削工具",
+  "categories": [
+    "媒体服务"
+  ],
+  "icon": "icons/mdcx.png",
+  "author": "stainless403",
+  "image": "stainless403/mdcx-builtin-gui-base:latest",
+  "default_stack_name": "mdcx",
+  "note": "安装后通过 http://NAS_IP:5800 访问 Web 界面（5900 为 VNC 端口）。{{scrape_dir}} 请在 compose 中改为实际刮削目录。",
+  "compose_file": "apps/mdcx/compose.yml"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "mdc",
+  "name": "MDC",
+  "description": "一个“小电影”刮削工具",
+  "categories": [
+    "媒体服务"
+  ],
+  "icon": "icons/mdcng.png",
+  "author": "mdcng",
+  "image": "mdcng/mdc:latest",
+  "default_stack_name": "mdc",
+  "note": "安装后通过 http://NAS_IP:9208 访问 Web 界面。{{scrape_dir}} 请在 compose 中改为实际刮削目录。",
+  "compose_file": "apps/mdc/compose.yml"
+}

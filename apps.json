@@ -89,6 +89,28 @@
       "icon": "icons/portainer.png",
       "author": "6053537",
       "image": "6053537/portainer-ce:latest"
+    },
+    {
+      "id": "mdc",
+      "name": "MDC",
+      "description": "一个“小电影”刮削工具",
+      "categories": [
+        "媒体服务"
+      ],
+      "icon": "icons/mdcng.png",
+      "author": "mdcng",
+      "image": "mdcng/mdc:latest"
+    },
+    {
+      "id": "mdcx",
+      "name": "MDCX",
+      "description": "一个“小电影”刮削工具",
+      "categories": [
+        "媒体服务"
+      ],
+      "icon": "icons/mdcx.png",
+      "author": "stainless403",
+      "image": "stainless403/mdcx-builtin-gui-base:latest"
     }
   ]
 }

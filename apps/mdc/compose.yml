@@ -1,0 +1,19 @@
+services:
+  mdc:
+    container_name: mdcng
+    restart: always
+    network_mode: bridge
+    ports:
+      - 9208:9208
+      - 9207:9207
+    environment:
+      - PUID=0
+      - PGID=0
+      - TZ=Asia/Shanghai
+    volumes:
+      # {{docker_root}} 部署时自动替换为设置中配置的容器安装目录
+      - "{{docker_root}}/mdcng/data:/config"
+      # {{scrape_dir}} 请改为实际刮削文件目录，如 /vol4/1000/media
+      - "{{scrape_dir}}:/刮削文件目录"
+    image: mdcng/mdc:latest
+networks: {}

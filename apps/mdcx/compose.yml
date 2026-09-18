@@ -1,0 +1,27 @@
+services:
+  mdcx-builtin-gui-base:
+    container_name: mdcx
+    restart: always
+    network_mode: bridge
+    ports:
+      - 5800:5800
+      - 5900:5900
+    volumes:
+      # {{docker_root}} 部署时自动替换为设置中配置的容器安装目录
+      - "{{docker_root}}/mdcx/data:/config"
+      - "{{docker_root}}/mdcx/mdcx-config:/mdcx-config"
+      - "{{docker_root}}/mdcx/logs:/app/Log"
+      # {{scrape_dir}} 请改为实际刮削文件目录，如 /vol4/1000/media
+      - "{{scrape_dir}}:/刮削文件目录"
+    environment:
+      #- XDG_RUNTIME_DIR=/tmp/runtime
+      #- XDG_CACHE_HOME=/config/cache
+      #- XDG_CONFIG_HOME=/config
+      #- XDG_DATA_HOME=/config/data
+      # - HOME=/config
+      - TZ=Asia/Shanghai
+      - DISPLAY_WIDTH=1920
+      - DISPLAY_HEIGHT=880
+      - USER_ID=0
+      - GROUP_ID=0
+    image: stainless403/mdcx-builtin-gui-base:latest
