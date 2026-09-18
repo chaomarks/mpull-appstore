@@ -6,7 +6,6 @@ services:
     ports:
       - 3002:3002
     volumes:
-      # {{docker_root}} 部署时自动替换为设置中配置的容器安装目录
       - "{{docker_root}}/sun-panel/conf:/app/conf"
       - /var/run/docker.sock:/var/run/docker.sock
     image: hslr/sun-panel:latest

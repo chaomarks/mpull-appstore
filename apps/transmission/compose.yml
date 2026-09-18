@@ -18,7 +18,6 @@ services:
       - 51413:51413
       - 51413:51413/udp
     volumes:
-      # {{docker_root}} 部署时自动替换为设置中配置的容器安装目录
       - "{{docker_root}}/transmission/config:/config"
       - "{{docker_root}}/transmission/watch:/watch"
       # {{downloads_dir}} 请改为实际下载目录，如 /vol4/1000/downloads

@@ -47,6 +47,8 @@ volumes:
   - "/vol4/1000/docker/lucky/luckyconf:/app/conf"
 ```
 
+`{{docker_root}}` 由 MPull 自动替换，compose 里不必再写注释说明。
+
 ## 自定义占位符（安装者填写）
 
 除 `{{docker_root}}` 外，compose 中可以用任意 `{{名称}}` 占位符（如 `{{media_dir}}`）表示需要安装者自行填写的宿主机路径，媒体目录、下载目录这类因人而异的路径都用这种方式：

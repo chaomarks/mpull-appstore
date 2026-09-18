@@ -13,7 +13,6 @@ services:
       - WEBUI_PORT=8080
       - TORRENTING_PORT=6018
     volumes:
-      # {{docker_root}} 部署时自动替换为设置中配置的容器安装目录
       - "{{docker_root}}/qbittorrent/config:/config"
       # {{downloads_dir}} 请改为实际下载目录，如 /vol4/1000/downloads
       - "{{downloads_dir}}/downloads:/downloads"

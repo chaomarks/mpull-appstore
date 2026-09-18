@@ -14,6 +14,5 @@ services:
       # {{ZEROTIER_JOIN_NETWORKS}} 请改为你的 ZeroTier 网络 ID（16 位十六进制，多个用空格分隔）
       ZEROTIER_JOIN_NETWORKS: "{{ZEROTIER_JOIN_NETWORKS}}"
     volumes:
-      # {{docker_root}} 部署时自动替换为设置中配置的容器安装目录
       - "{{docker_root}}/zerotier/data:/var/lib/zerotier-one"
 networks: {}
