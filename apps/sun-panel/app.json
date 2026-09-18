@@ -1,0 +1,14 @@
+{
+  "id": "sun-panel",
+  "name": "Sun-Panel",
+  "description": "NAS/服务器导航首页面板：自定义图标与分组、多账号隔离，内置 Docker 容器管理与系统状态小组件",
+  "categories": [
+    "系统工具"
+  ],
+  "icon": "icons/sun-panel.png",
+  "author": "hslr",
+  "image": "hslr/sun-panel:latest",
+  "default_stack_name": "sun-panel",
+  "note": "安装后通过 http://NAS_IP:3002 访问面板。挂载 docker.sock 后可在面板内管理容器。",
+  "compose_file": "apps/sun-panel/compose.yml"
+}
