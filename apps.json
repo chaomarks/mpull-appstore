@@ -111,6 +111,17 @@
       "icon": "icons/mdcx.png",
       "author": "stainless403",
       "image": "stainless403/mdcx-builtin-gui-base:latest"
+    },
+    {
+      "id": "clouddrive2",
+      "name": "CloudDrive2",
+      "description": "统一管理所有云盘账户、跨云复制、加密、备份、对外提供 WebDAV。",
+      "categories": [
+        "网盘工具"
+      ],
+      "icon": "icons/clouddrive2.png",
+      "author": "cloudnas",
+      "image": "cloudnas/clouddrive2"
     }
   ]
 }

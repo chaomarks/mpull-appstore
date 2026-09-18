@@ -1,0 +1,14 @@
+{
+  "id": "clouddrive2",
+  "name": "CloudDrive2",
+  "description": "统一管理所有云盘账户、跨云复制、加密、备份、对外提供 WebDAV。",
+  "categories": [
+    "网盘工具"
+  ],
+  "icon": "icons/clouddrive2.png",
+  "author": "cloudnas",
+  "image": "cloudnas/clouddrive2",
+  "default_stack_name": "clouddrive2",
+  "note": "安装后通过 http://NAS_IP:19798 访问 Web 界面。{{mount_dir}} 请在 compose 中改为实际挂载目录。",
+  "compose_file": "apps/clouddrive2/compose.yml"
+}
