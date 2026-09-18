@@ -1,0 +1,19 @@
+services:
+  zerotier:
+    image: zerotier/zerotier:latest
+    container_name: zerotier
+    restart: always
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    devices:
+      - /dev/net/tun
+    environment:
+      # 只认 ZEROTIER_JOIN_NETWORKS，多个网络 ID 用空格分隔（ZT_NETWORK_ID 会被忽略）
+      # {{ZEROTIER_JOIN_NETWORKS}} 请改为你的 ZeroTier 网络 ID（16 位十六进制，多个用空格分隔）
+      ZEROTIER_JOIN_NETWORKS: "{{ZEROTIER_JOIN_NETWORKS}}"
+    volumes:
+      # {{docker_root}} 部署时自动替换为设置中配置的容器安装目录
+      - "{{docker_root}}/zerotier/data:/var/lib/zerotier-one"
+networks: {}

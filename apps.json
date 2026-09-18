@@ -133,6 +133,17 @@
       "icon": "icons/sun-panel.png",
       "author": "hslr",
       "image": "hslr/sun-panel:latest"
+    },
+    {
+      "id": "zerotier",
+      "name": "ZeroTier",
+      "description": "ZeroTier 虚拟组网：把 NAS 与异地设备组成虚拟局域网，点对点直连、无需公网 IP",
+      "categories": [
+        "网络工具"
+      ],
+      "icon": "icons/zerotier.png",
+      "author": "zerotier",
+      "image": "zerotier/zerotier:latest"
     }
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "id": "zerotier",
+  "name": "ZeroTier",
+  "description": "ZeroTier 虚拟组网：把 NAS 与异地设备组成虚拟局域网，点对点直连、无需公网 IP",
+  "categories": [
+    "网络工具"
+  ],
+  "icon": "icons/zerotier.png",
+  "author": "zerotier",
+  "image": "zerotier/zerotier:latest",
+  "default_stack_name": "zerotier",
+  "note": "{{ZEROTIER_JOIN_NETWORKS}} 请在 compose 中改为你的网络 ID。使用 host 网络与 /dev/net/tun，需要 NET_ADMIN/SYS_ADMIN 权限（已配好）。",
+  "compose_file": "apps/zerotier/compose.yml"
+}
