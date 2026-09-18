@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-17",
+  "updated_at": "2026-09-19",
   "apps": [
     {
       "id": "lucky",
@@ -144,6 +144,17 @@
       "icon": "icons/zerotier.png",
       "author": "zerotier",
       "image": "zerotier/zerotier:latest"
+    },
+    {
+      "id": "new-api",
+      "name": "New API",
+      "description": "New API 大模型网关与 AI 资产管理系统：兼容 OpenAI / Claude / Gemini 等接口格式，统一管理多渠道模型、令牌与额度",
+      "categories": [
+        "网络工具"
+      ],
+      "icon": "icons/new-api.png",
+      "author": "Calcium-Ion",
+      "image": "calciumion/new-api:latest"
     }
   ]
 }
