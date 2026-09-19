@@ -9,6 +9,6 @@
   "author": "snowdreamtech",
   "image": "snowdreamtech/frpc:latest",
   "default_stack_name": "frpc",
-  "note": "frpc.toml 需提前手动创建（挂载路径见 compose），配置示例见 compose 注释；使用 host 网络。",
+  "note": "frpc.toml 需提前手动创建（文件不存在时 Docker 会在该路径建目录，导致容器启动失败）。示例：\n[common]\nserver_addr = 服务端IP\nserver_port = 7000\n\nauth.method = \"token\"\nauth.token = \"服务端设置的\"\n\n[服务名称]\ntype = \"tcp\"\nlocal_ip = \"127.0.0.1\"\nlocal_port = 本地端口\nremote_port = 服务端端口",
   "compose_file": "apps/frpc/compose.yml"
 }

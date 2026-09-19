@@ -5,19 +5,6 @@ services:
     network_mode: host
     volumes:
       # {{docker_root}} 部署时自动替换为设置中配置的容器安装目录
-      # frpc.toml 需先手动创建（文件不存在时 Docker 会在该路径建目录，导致容器启动失败），示例：
-      # [common]
-      # server_addr = 服务端IP
-      # server_port = 7000
-      #
-      # auth.method = "token"
-      # auth.token = "服务端设置的"
-      #
-      # [服务名称]
-      # type = "tcp"
-      # local_ip = "127.0.0.1"
-      # local_port = 本地端口
-      # remote_port = 服务端端口
       - "{{docker_root}}/frpc/frpc.toml:/etc/frp/frpc.toml"
     image: snowdreamtech/frpc:latest
 networks: {}

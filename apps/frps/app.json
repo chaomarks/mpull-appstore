@@ -9,6 +9,6 @@
   "author": "snowdreamtech",
   "image": "snowdreamtech/frps",
   "default_stack_name": "frps",
-  "note": "使用 host 网络：7000 为 frp 服务端口、7500 为 Web 管理面板。frps.toml 需先手动创建，示例见 compose 注释。",
+  "note": "frps.toml 需先手动创建（文件不存在时 Docker 会在该路径建目录，导致容器启动失败）。示例：\nbindAddr = \"0.0.0.0\"\nbindPort = 7000\n\nauth.method = \"token\"\nauth.token = \"自己设置\"\n\nwebServer.addr = \"0.0.0.0\"\nwebServer.port = 7500\nwebServer.user = \"WEBUI账号\"\nwebServer.password = \"WEBUI密码\"\n\n使用 host 网络：7000 为 frp 服务端口，7500 为 Web 管理面板。",
   "compose_file": "apps/frps/compose.yml"
 }
