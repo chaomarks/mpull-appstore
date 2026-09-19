@@ -15,4 +15,3 @@ services:
     devices:
       - /dev/fuse:/dev/fuse
     image: cloudnas/clouddrive2
-networks: {}

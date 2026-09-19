@@ -16,4 +16,3 @@ services:
       # {{media_dir}} 请改为实际媒体库路径，如 /vol4/1000/media
       - "{{media_dir}}/:/media"
     image: amilys/embyserver:4.8.11.0
-networks: {}

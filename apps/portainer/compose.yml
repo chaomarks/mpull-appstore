@@ -9,4 +9,3 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - "{{docker_root}}/portainer/:/data"
     image: 6053537/portainer-ce:latest
-networks: {}

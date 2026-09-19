@@ -9,4 +9,3 @@ services:
       - "{{docker_root}}/sun-panel/conf:/app/conf"
       - /var/run/docker.sock:/var/run/docker.sock
     image: hslr/sun-panel:latest
-networks: {}

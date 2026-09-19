@@ -15,4 +15,3 @@ services:
       # {{scrape_dir}} 请改为实际刮削文件目录，如 /vol4/1000/media
       - "{{scrape_dir}}:/刮削文件目录"
     image: mdcng/mdc:latest
-networks: {}

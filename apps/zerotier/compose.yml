@@ -15,4 +15,3 @@ services:
       ZEROTIER_JOIN_NETWORKS: "{{ZEROTIER_JOIN_NETWORKS}}"
     volumes:
       - "{{docker_root}}/zerotier/data:/var/lib/zerotier-one"
-networks: {}

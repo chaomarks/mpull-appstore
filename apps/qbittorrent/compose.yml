@@ -17,4 +17,3 @@ services:
       # {{downloads_dir}} 请改为实际下载目录，如 /vol4/1000/downloads
       - "{{downloads_dir}}/downloads:/downloads"
     image: linuxserver/qbittorrent:latest
-networks: {}

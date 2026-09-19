@@ -11,4 +11,3 @@ services:
     volumes:
       - "{{docker_root}}/new-api/data:/data"
       - "{{docker_root}}/new-api/logs:/app/logs"
-networks: {}
