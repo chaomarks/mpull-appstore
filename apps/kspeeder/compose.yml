@@ -1,0 +1,21 @@
+services:
+  kspeeder:
+    container_name: kspeeder
+    restart: always
+    network_mode: bridge
+    ports:
+      - 5003:5003
+      - 5443:5443
+    volumes:
+      - "{{docker_root}}/kspeeder/kspeeder-data:/kspeeder-data"
+      - "{{docker_root}}/kspeeder/kspeeder-config:/kspeeder-config"
+    environment:
+      - TZ=Asia/Shanghai
+      - KSPEEDER_PORT=5443
+      - KSPEEDER_ADMIN_PORT=5003
+      - KSPEEDER_CONFIG=/kspeeder-config
+      - KSPEEDER_DATA=/kspeeder-data
+      - KS_USER_NODES_CONFIG=/kspeeder-config/nodes.yaml
+      # {{KSPEEDER_PROXY_AUTH}} 改为「用户名:密码」用于 CONNECT 代理鉴权；留空会禁用代理，不需要可删掉本行
+      - KSPEEDER_PROXY_AUTH={{KSPEEDER_PROXY_AUTH}}
+    image: linkease/kspeeder:latest

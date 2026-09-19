@@ -1,0 +1,14 @@
+{
+  "id": "kspeeder",
+  "name": "KSpeeder",
+  "description": "Docker 镜像下载加速服务：多镜像源叠加 + CDN 缓存 + 断点续传，兼容官方 Docker 客户端，保持原始镜像名透明加速",
+  "categories": [
+    "网络工具"
+  ],
+  "icon": "icons/kspeeder.png",
+  "author": "linkease",
+  "image": "linkease/kspeeder:latest",
+  "default_stack_name": "kspeeder",
+  "note": "安装后通过 http://NAS_IP:5003 访问管理面板；5443 为镜像加速服务端口，Docker 客户端指向它即可加速拉取。{{KSPEEDER_PROXY_AUTH}} 请在 compose 中填写。",
+  "compose_file": "apps/kspeeder/compose.yml"
+}

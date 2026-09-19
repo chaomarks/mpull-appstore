@@ -254,6 +254,17 @@
       "icon": "icons/movie-pilot.png",
       "author": "jxxghp",
       "image": "jxxghp/moviepilot-v2:latest"
+    },
+    {
+      "id": "kspeeder",
+      "name": "KSpeeder",
+      "description": "Docker 镜像下载加速服务：多镜像源叠加 + CDN 缓存 + 断点续传，兼容官方 Docker 客户端，保持原始镜像名透明加速",
+      "categories": [
+        "网络工具"
+      ],
+      "icon": "icons/kspeeder.png",
+      "author": "linkease",
+      "image": "linkease/kspeeder:latest"
     }
   ]
 }
