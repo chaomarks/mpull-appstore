@@ -1,0 +1,14 @@
+{
+  "id": "verysync",
+  "name": "VerySync",
+  "description": "微力同步：基于 P2P 的跨设备文件同步工具，无需公网 IP 即可在多台设备间实时同步目录，支持选择性同步与加密传输",
+  "categories": [
+    "文件服务"
+  ],
+  "icon": "icons/verysync.png",
+  "author": "jonnyan404",
+  "image": "jonnyan404/verysync:latest",
+  "default_stack_name": "verysync",
+  "note": "安装后通过 http://NAS_IP:8886 访问 Web 界面。{{sync_dir}} 请在 compose 中改为实际同步目录。",
+  "compose_file": "apps/verysync/compose.yml"
+}

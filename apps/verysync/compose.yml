@@ -1,0 +1,15 @@
+services:
+  verysync:
+    container_name: verysync
+    restart: always
+    network_mode: bridge
+    ports:
+      # - 3000:3000
+      - 8886:8886
+      # - 22037:22037/udp
+      # - 22027:22027/udp
+    volumes:
+      - "{{docker_root}}/verysync/config:/data"
+      # {{sync_dir}} 请改为实际同步目录，如 /vol4/1000/sync
+      - "{{sync_dir}}:/映射同步目录"
+    image: jonnyan404/verysync:latest
