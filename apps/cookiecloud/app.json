@@ -1,0 +1,14 @@
+{
+  "id": "cookiecloud",
+  "name": "CookieCloud",
+  "description": "自托管的浏览器 Cookie 同步服务：端到端加密上传/下载 Cookie，配合青龙、下载器等工具自动登录",
+  "categories": [
+    "系统工具"
+  ],
+  "icon": "icons/cookie-cloud.png",
+  "author": "easychen",
+  "image": "easychen/cookiecloud:latest",
+  "default_stack_name": "cookiecloud",
+  "note": "浏览器扩展/客户端里填服务地址 http://NAS_IP:9088/cookiecloud（容器内监听 8088，API_ROOT=/cookiecloud）。",
+  "compose_file": "apps/cookiecloud/compose.yml"
+}

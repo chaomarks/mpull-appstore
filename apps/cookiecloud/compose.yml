@@ -1,0 +1,12 @@
+services:
+  cookiecloud:
+    container_name: cookiecloud
+    restart: always
+    network_mode: bridge
+    ports:
+      - 9088:8088
+    environment:
+      - API_ROOT=/cookiecloud
+    volumes:
+      - "{{docker_root}}/cookiecloud/data:/data/api/data"
+    image: easychen/cookiecloud:latest

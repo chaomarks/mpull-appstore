@@ -265,6 +265,17 @@
       "icon": "icons/kspeeder.png",
       "author": "linkease",
       "image": "linkease/kspeeder:latest"
+    },
+    {
+      "id": "cookiecloud",
+      "name": "CookieCloud",
+      "description": "自托管的浏览器 Cookie 同步服务：端到端加密上传/下载 Cookie，配合青龙、下载器等工具自动登录",
+      "categories": [
+        "系统工具"
+      ],
+      "icon": "icons/cookie-cloud.png",
+      "author": "easychen",
+      "image": "easychen/cookiecloud:latest"
     }
   ]
 }
