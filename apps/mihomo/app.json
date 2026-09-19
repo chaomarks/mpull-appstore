@@ -9,6 +9,6 @@
   "author": "mark8857857",
   "image": "mark8857857/mihomo-sub:latest",
   "default_stack_name": "mihomo",
-  "note": "安装后通过 http://NAS_IP:3002 访问 Sub-Store 前端（登录密码为 SUB_STORE_UI_PASSWORD）。三个密钥请在 compose 中填入 openssl rand -hex 16 生成的随机值。",
+  "note": "安装后通过 http://NAS_IP:3002 访问 Sub-Store 前端（登录密码为 SUB_STORE_UI_PASSWORD）。两个密钥请在 compose 中填入 openssl rand -hex 16 生成的随机值或者手动输入随机≥16位字符。",
   "compose_file": "apps/mihomo/compose.yml"
 }
