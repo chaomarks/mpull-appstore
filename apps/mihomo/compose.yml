@@ -10,7 +10,6 @@ services:
       - "3002:3002"
     environment:
       - TZ=Asia/Shanghai
-      # 三个密钥生成：CMD/SSH 终端执行 openssl rand -hex 16（32 位随机值，比手输 16 位更安全）
       # SUB_STORE_UI_PASSWORD = Sub-Store 前端登录密码
       - "SUB_STORE_UI_PASSWORD={{SUB_STORE_UI_PASSWORD}}"
       # SUB_STORE_PUBLIC_TOKEN = 订阅链接的下载/分享令牌
