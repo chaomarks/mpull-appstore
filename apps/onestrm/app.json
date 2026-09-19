@@ -5,6 +5,7 @@
   "categories": [
     "媒体服务"
   ],
+  "icon": "icons/onestrm.png",
   "author": "lifj25",
   "image": "lifj25/onestrm:latest",
   "default_stack_name": "onestrm",
