@@ -243,6 +243,17 @@
       "icon": "icons/any-listen.png",
       "author": "lyswhut",
       "image": "lyswhut/any-listen-web-server:latest"
+    },
+    {
+      "id": "moviepilot",
+      "name": "MoviePilot",
+      "description": "NAS 媒体库自动化管理：自动订阅与下载、整理刮削、站点签到与消息通知，可联动 qBittorrent/Transmission 与 Emby/Jellyfin/Plex",
+      "categories": [
+        "媒体服务"
+      ],
+      "icon": "icons/movie-pilot.png",
+      "author": "jxxghp",
+      "image": "jxxghp/moviepilot-v2:latest"
     }
   ]
 }

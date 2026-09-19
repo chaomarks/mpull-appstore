@@ -1,0 +1,30 @@
+services:
+  moviepilot:
+    stdin_open: true
+    tty: true
+    container_name: moviepilot-v2
+    hostname: moviepilot-v2
+    restart: always
+    network_mode: bridge
+    ports:
+      - 3000:3000
+      - 3001:3001
+    volumes:
+      # {{media_dir}} 请改为实际媒体库目录，如 /vol4/1000/media
+      - "{{media_dir}}:/media"
+      - "{{docker_root}}/moviepilot-v2/config:/config"
+      - "{{docker_root}}/moviepilot-v2/core:/moviepilot/.cloakbrowser"
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      - PUID=0
+      - PGID=0
+      - UMASK=022
+      # 代理指向宿主机（172.17.0.1 为 docker0 网关），无代理环境可删除下面三行
+      - NO_PROXY=172.17.0.1,127.0.0.1,localhost
+      - ALL_PROXY=http://172.17.0.1:7890
+      - HTTPS_PROXY=http://172.17.0.1:7890
+      - TZ=Asia/Shanghai
+      - SUPERUSER=admin
+      # {{SUPERUSER_PASSWORD}} 请改为初始登录密码
+      - SUPERUSER_PASSWORD={{SUPERUSER_PASSWORD}}
+    image: jxxghp/moviepilot-v2:latest
