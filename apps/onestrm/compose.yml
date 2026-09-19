@@ -1,0 +1,18 @@
+services:
+  onestrm:
+    image: lifj25/onestrm:latest
+    container_name: onestrm
+    restart: always
+    network_mode: bridge
+    ports:
+      - 18003:18003
+      # emby服务器端口，可映射多个
+      - 8096:8096
+    volumes:
+      - "{{docker_root}}/onestrm/config:/app/config"
+      # {{strm_dir}} 请改为实际 STRM 文件目录，如 /vol4/1000/media
+      - "{{strm_dir}}/media:/media"
+    environment:
+      - PUID=0
+      - PGID=0
+      - UMASK=022

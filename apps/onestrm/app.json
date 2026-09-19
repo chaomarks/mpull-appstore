@@ -1,0 +1,13 @@
+{
+  "id": "onestrm",
+  "name": "OneStrm",
+  "description": "网盘媒体库自动化工具：扫描网盘生成 STRM 交给 Emby 建库，支持直链播放、自动整理、订阅与维护插件",
+  "categories": [
+    "媒体服务"
+  ],
+  "author": "lifj25",
+  "image": "lifj25/onestrm:latest",
+  "default_stack_name": "onestrm",
+  "note": "安装后通过 http://NAS_IP:18003 访问。{{strm_dir}} 请在 compose 中改为实际 STRM 文件目录。注意：8096 端口与 Emby 模板冲突，两者同时部署需改掉其中一个的端口映射。",
+  "compose_file": "apps/onestrm/compose.yml"
+}

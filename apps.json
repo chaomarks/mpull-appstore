@@ -287,6 +287,16 @@
       "icon": "icons/iyuuplus.png",
       "author": "iyuucn",
       "image": "iyuucn/iyuuplus:latest"
+    },
+    {
+      "id": "onestrm",
+      "name": "OneStrm",
+      "description": "网盘媒体库自动化工具：扫描网盘生成 STRM 交给 Emby 建库，支持直链播放、自动整理、订阅与维护插件",
+      "categories": [
+        "媒体服务"
+      ],
+      "author": "lifj25",
+      "image": "lifj25/onestrm:latest"
     }
   ]
 }
