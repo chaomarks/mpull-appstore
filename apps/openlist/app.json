@@ -1,0 +1,14 @@
+{
+  "id": "openlist",
+  "name": "OpenList",
+  "description": "OpenList：AList 社区衍生版文件列表程序，聚合本地存储与多种网盘，支持 WebDAV 与在线预览",
+  "categories": [
+    "网盘工具"
+  ],
+  "icon": "icons/openlist.png",
+  "author": "openlistteam",
+  "image": "openlistteam/openlist:latest",
+  "default_stack_name": "openlist",
+  "note": "注意：默认端口 5244 与 Alist 模板冲突，两个同时部署需修改其中一个的端口映射。安装后通过 http://NAS_IP:5244 访问。",
+  "compose_file": "apps/openlist/compose.yml"
+}

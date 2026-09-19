@@ -199,6 +199,17 @@
       "icon": "icons/embypulse.png",
       "author": "zeyu8023",
       "image": "zeyu8023/embypulse-pro:latest"
+    },
+    {
+      "id": "openlist",
+      "name": "OpenList",
+      "description": "OpenList：AList 社区衍生版文件列表程序，聚合本地存储与多种网盘，支持 WebDAV 与在线预览",
+      "categories": [
+        "网盘工具"
+      ],
+      "icon": "icons/openlist.png",
+      "author": "openlistteam",
+      "image": "openlistteam/openlist:latest"
     }
   ]
 }

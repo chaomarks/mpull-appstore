@@ -1,0 +1,13 @@
+services:
+  alist:
+    container_name: olist
+    restart: always
+    network_mode: bridge
+    user: '0:0'
+    ports:
+      - 5244:5244
+    volumes:
+      - "{{docker_root}}/olist/data:/opt/openlist/data"
+    environment:
+      - UMASK=022
+    image: openlistteam/openlist:latest
