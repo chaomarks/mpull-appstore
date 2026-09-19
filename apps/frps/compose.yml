@@ -4,7 +4,6 @@ services:
     restart: always
     network_mode: host
     volumes:
-      # {{docker_root}} 部署时自动替换为设置中配置的容器安装目录
       - "{{docker_root}}/frps/frps.toml:/etc/frp/frps.toml"
     image: snowdreamtech/frps
 networks: {}
