@@ -1,0 +1,14 @@
+{
+  "id": "anylisten",
+  "name": "AnyListen",
+  "description": "跨平台私有音乐播放服务：管理播放本地曲库与 WebDAV 远程歌曲，支持在线歌曲信息匹配（封面/歌词）、扩展插件、歌单与音效",
+  "categories": [
+    "媒体服务"
+  ],
+  "icon": "icons/any-listen.png",
+  "author": "lyswhut",
+  "image": "lyswhut/any-listen-web-server:latest",
+  "default_stack_name": "anylisten",
+  "note": "安装后通过 http://NAS_IP:9500 访问。{{LOGIN_PWD}} 请在 compose 中改为登录密码；{{music_dir}} 为可选的额外音乐目录。",
+  "compose_file": "apps/anylisten/compose.yml"
+}

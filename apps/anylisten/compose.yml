@@ -1,0 +1,20 @@
+services:
+  anylisten:
+    container_name: anylisten
+    restart: always
+    network_mode: bridge
+    user: 0:0
+    ports:
+      - 9500:9500
+    environment:
+      # {{LOGIN_PWD}} 请改为面板登录密码
+      - LOGIN_PWD={{LOGIN_PWD}}
+      - LOG_PATH=/server/data/logs
+      # 允许访问的本地目录，多个目录用英文逗号分隔
+      - ALLOW_PUBLIC_DIR=/music
+    volumes:
+      - "{{docker_root}}/anylisten/music:/music/"
+      - "{{docker_root}}/anylisten/data:/server/data"
+      # {{music_dir}} 请改为其他音乐文件目录；不需要额外目录时删掉这一行
+      - "{{music_dir}}:/其他音乐文件目录"
+    image: lyswhut/any-listen-web-server:latest
