@@ -276,6 +276,17 @@
       "icon": "icons/cookie-cloud.png",
       "author": "easychen",
       "image": "easychen/cookiecloud:latest"
+    },
+    {
+      "id": "iyuuplus",
+      "name": "IYUUPlus",
+      "description": "PT 自动辅种工具（爱语飞飞）：按种子特征码交叉索引，通过计划任务调用 qBittorrent/Transmission 自动辅种，集成 WebUI、转移、下载与 DDNS",
+      "categories": [
+        "下载工具"
+      ],
+      "icon": "icons/iyuuplus.png",
+      "author": "iyuucn",
+      "image": "iyuucn/iyuuplus:latest"
     }
   ]
 }

@@ -1,0 +1,15 @@
+services:
+  iyuuplus:
+    stdin_open: true
+    tty: true
+    container_name: iyuuplus
+    restart: always
+    network_mode: bridge
+    ports:
+      - 8780:8780
+    volumes:
+      - "{{docker_root}}/iyuu:/iyuu"
+      - "{{docker_root}}/iyuu/data:/data"
+      # {{downloads_dir}} 请改为实际下载目录，如 /vol4/1000/downloads
+      - "{{downloads_dir}}/downloads:/downloads"
+    image: iyuucn/iyuuplus:latest
