@@ -1,0 +1,14 @@
+{
+  "id": "qinglong",
+  "name": "QingLong",
+  "description": "青龙面板：定时任务与脚本管理平台，支持 Python/JavaScript/Shell/TypeScript 脚本，环境变量管理与任务日志",
+  "categories": [
+    "系统工具"
+  ],
+  "icon": "icons/qinglong.png",
+  "author": "whyour",
+  "image": "whyour/qinglong:latest",
+  "default_stack_name": "qinglong",
+  "note": "安装后通过 http://NAS_IP:5700 访问面板。环境变量里的代理指向宿主机（172.17.0.1 为 docker0 网关），无代理环境可删除这三行。",
+  "compose_file": "apps/qinglong/compose.yml"
+}

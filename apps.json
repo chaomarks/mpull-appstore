@@ -221,6 +221,17 @@
       "icon": "icons/verysync.png",
       "author": "jonnyan404",
       "image": "jonnyan404/verysync:latest"
+    },
+    {
+      "id": "qinglong",
+      "name": "QingLong",
+      "description": "青龙面板：定时任务与脚本管理平台，支持 Python/JavaScript/Shell/TypeScript 脚本，环境变量管理与任务日志",
+      "categories": [
+        "系统工具"
+      ],
+      "icon": "icons/qinglong.png",
+      "author": "whyour",
+      "image": "whyour/qinglong:latest"
     }
   ]
 }

@@ -1,0 +1,15 @@
+services:
+  qinglong:
+    image: whyour/qinglong:latest
+    container_name: qinglong
+    restart: always
+    network_mode: bridge
+    ports:
+      - "5700:5700"
+    volumes:
+      - "{{docker_root}}/ql/data:/ql/data"
+    environment:
+      # 代理指向宿主机（172.17.0.1 为 docker0 网关），无代理环境可删除下面三行
+      - NO_PROXY=172.17.0.1,127.0.0.1,localhost
+      - ALL_PROXY=http://172.17.0.1:7890
+      - HTTPS_PROXY=http://172.17.0.1:7890
