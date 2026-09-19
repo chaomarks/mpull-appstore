@@ -1,0 +1,13 @@
+services:
+  home-assistant:
+    image: homeassistant/home-assistant:latest
+    container_name: Hassistant
+    restart: always
+    network_mode: host
+    privileged: true
+    # ports:
+    #   - "8123:8123"
+    volumes:
+      - "{{docker_root}}/homeassistant:/config"
+    environment:
+      - TZ=Asia/Shanghai

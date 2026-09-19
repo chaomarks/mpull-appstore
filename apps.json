@@ -177,6 +177,17 @@
       "icon": "icons/frpc.png",
       "author": "snowdreamtech",
       "image": "snowdreamtech/frpc:latest"
+    },
+    {
+      "id": "home-assistant",
+      "name": "Home Assistant",
+      "description": "Home Assistant 智能家居中枢：本地化控制各类智能家居设备，支持自动化联动、语音助手与丰富的社区集成",
+      "categories": [
+        "智能家居"
+      ],
+      "icon": "icons/home-assistant.png",
+      "author": "homeassistant",
+      "image": "homeassistant/home-assistant:latest"
     }
   ]
 }

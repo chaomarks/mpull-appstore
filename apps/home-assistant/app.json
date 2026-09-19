@@ -1,0 +1,14 @@
+{
+  "id": "home-assistant",
+  "name": "Home Assistant",
+  "description": "Home Assistant 智能家居中枢：本地化控制各类智能家居设备，支持自动化联动、语音助手与丰富的社区集成",
+  "categories": [
+    "智能家居"
+  ],
+  "icon": "icons/home-assistant.png",
+  "author": "homeassistant",
+  "image": "homeassistant/home-assistant:latest",
+  "default_stack_name": "home-assistant",
+  "note": "使用 host 网络与 privileged 权限，安装后通过 http://NAS_IP:8123 访问；配置目录为安装目录下的 homeassistant/。",
+  "compose_file": "apps/home-assistant/compose.yml"
+}
