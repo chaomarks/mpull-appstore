@@ -1,0 +1,14 @@
+{
+  "id": "frps",
+  "name": "FRP Server",
+  "description": "FRP 内网穿透服务端（frps）：部署在有公网 IP 的服务器上，接收 frpc 连接并转发流量，支持 TCP/UDP/HTTP/HTTPS",
+  "categories": [
+    "网络工具"
+  ],
+  "icon": "icons/frps.png",
+  "author": "snowdreamtech",
+  "image": "snowdreamtech/frps",
+  "default_stack_name": "frps",
+  "note": "使用 host 网络：7000 为 frp 服务端口、7500 为 Web 管理面板。frps.toml 需先手动创建，示例见 compose 注释。",
+  "compose_file": "apps/frps/compose.yml"
+}

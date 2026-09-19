@@ -155,6 +155,28 @@
       "icon": "icons/new-api.png",
       "author": "Calcium-Ion",
       "image": "calciumion/new-api:latest"
+    },
+    {
+      "id": "frps",
+      "name": "FRP Server",
+      "description": "FRP 内网穿透服务端（frps）：部署在有公网 IP 的服务器上，接收 frpc 连接并转发流量，支持 TCP/UDP/HTTP/HTTPS",
+      "categories": [
+        "网络工具"
+      ],
+      "icon": "icons/frps.png",
+      "author": "snowdreamtech",
+      "image": "snowdreamtech/frps"
+    },
+    {
+      "id": "frpc",
+      "name": "FRP Client",
+      "description": "FRP 内网穿透客户端（frpc）：把内网服务映射到公网 frps 服务端，无需公网 IP 即可外网访问",
+      "categories": [
+        "网络工具"
+      ],
+      "icon": "icons/frpc.png",
+      "author": "snowdreamtech",
+      "image": "snowdreamtech/frpc:latest"
     }
   ]
 }

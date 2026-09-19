@@ -1,0 +1,14 @@
+{
+  "id": "frpc",
+  "name": "FRP Client",
+  "description": "FRP 内网穿透客户端（frpc）：把内网服务映射到公网 frps 服务端，无需公网 IP 即可外网访问",
+  "categories": [
+    "网络工具"
+  ],
+  "icon": "icons/frpc.png",
+  "author": "snowdreamtech",
+  "image": "snowdreamtech/frpc:latest",
+  "default_stack_name": "frpc",
+  "note": "frpc.toml 需提前手动创建（挂载路径见 compose），配置示例见 compose 注释；使用 host 网络。",
+  "compose_file": "apps/frpc/compose.yml"
+}

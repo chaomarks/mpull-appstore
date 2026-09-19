@@ -1,0 +1,21 @@
+services:
+  frps:
+    container_name: frps
+    restart: always
+    network_mode: host
+    volumes:
+      # {{docker_root}} 部署时自动替换为设置中配置的容器安装目录
+      # frps.toml 需先手动创建（文件不存在时 Docker 会在该路径建目录，导致容器启动失败），示例：
+      # bindAddr = "0.0.0.0"
+      # bindPort = 7000
+      #
+      # auth.method = "token"
+      # auth.token = "自己设置"
+      #
+      # webServer.addr = "0.0.0.0"
+      # webServer.port = 7500
+      # webServer.user = "WEBUI账号"
+      # webServer.password = "WEBUI密码"
+      - "{{docker_root}}/frps/frps.toml:/etc/frp/frps.toml"
+    image: snowdreamtech/frps
+networks: {}
