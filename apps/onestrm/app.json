@@ -9,6 +9,6 @@
   "author": "lifj25",
   "image": "lifj25/onestrm:latest",
   "default_stack_name": "onestrm",
-  "note": "安装后通过 http://NAS_IP:18003 访问。{{strm_dir}} 请在 compose 中改为实际 STRM 文件目录。注意：8096 端口与 Emby 模板冲突，两者同时部署需改掉其中一个的端口映射。",
+  "note": "安装后通过 http://NAS_IP:18003 访问。{{strm_dir}} 请在 compose 中改为实际 STRM 文件目录。",
   "compose_file": "apps/onestrm/compose.yml"
 }
