@@ -1,0 +1,18 @@
+services:
+  emby-pulse:
+    image: zeyu8023/embypulse-pro:latest
+    container_name: embypulse
+    restart: always
+    network_mode: bridge
+    ports:
+      - 10307:10307
+      - 10308:10308
+    volumes:
+      - "{{docker_root}}/embypulse/config:/workspace/config"
+      - "{{docker_root}}/embypulse/data:/workspace/data"
+    environment:
+      - TZ=Asia/Shanghai
+      # {{EMBY_HOST}} 请改为 Emby 的访问地址（bridge 网络下用 NAS 局域网 IP），如 http://192.168.1.10:8096
+      - EMBY_HOST={{EMBY_HOST}}
+      # {{EMBY_API_KEY}} 请改为 Emby 后台生成的 API Key
+      - EMBY_API_KEY={{EMBY_API_KEY}}

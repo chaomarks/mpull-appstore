@@ -1,0 +1,14 @@
+{
+  "id": "embypulse",
+  "name": "EmbyPulse",
+  "description": "Emby 服务器的高级伴侣：数据洞察大盘、用户与求片管理、追剧日历、缺集补货、媒体报告与 Telegram 机器人",
+  "categories": [
+    "媒体服务"
+  ],
+  "icon": "icons/embypulse.png",
+  "author": "zeyu8023",
+  "image": "zeyu8023/embypulse-pro:latest",
+  "default_stack_name": "embypulse",
+  "note": "安装后通过 http://NAS_IP:10307 访问面板（10308 为配套服务端口）。{{EMBY_HOST}} 与 {{EMBY_API_KEY}} 请在 compose 中填写。",
+  "compose_file": "apps/embypulse/compose.yml"
+}

@@ -188,6 +188,17 @@
       "icon": "icons/home-assistant.png",
       "author": "homeassistant",
       "image": "homeassistant/home-assistant:latest"
+    },
+    {
+      "id": "embypulse",
+      "name": "EmbyPulse",
+      "description": "Emby 服务器的高级伴侣：数据洞察大盘、用户与求片管理、追剧日历、缺集补货、媒体报告与 Telegram 机器人",
+      "categories": [
+        "媒体服务"
+      ],
+      "icon": "icons/embypulse.png",
+      "author": "zeyu8023",
+      "image": "zeyu8023/embypulse-pro:latest"
     }
   ]
 }
