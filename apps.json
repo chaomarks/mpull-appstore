@@ -298,6 +298,17 @@
       "icon": "icons/onestrm.png",
       "author": "lifj25",
       "image": "lifj25/onestrm:latest"
+    },
+    {
+      "id": "cloudsaver",
+      "name": "CloudSaver",
+      "description": "网盘资源搜索与转存工具：聚合搜索网盘资源并一键转存到自己的网盘，支持移动端与 PC 响应式使用",
+      "categories": [
+        "网盘工具"
+      ],
+      "icon": "icons/cloudsaver.png",
+      "author": "jiangrui1994",
+      "image": "jiangrui1994/cloudsaver:latest"
     }
   ]
 }

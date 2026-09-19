@@ -1,0 +1,15 @@
+services:
+  cloudsaver:
+    restart: always
+    network_mode: bridge
+    container_name: cloudsaver
+    ports:
+      - 8008:8008
+    environment:
+      - PUID=0
+      - PGID=0
+      - UMASK=022
+    volumes:
+      - "{{docker_root}}/cloudsaver/data:/app/data"
+      - "{{docker_root}}/cloudsaver/config:/app/config"
+    image: jiangrui1994/cloudsaver:latest

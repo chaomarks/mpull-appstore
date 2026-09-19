@@ -1,0 +1,14 @@
+{
+  "id": "cloudsaver",
+  "name": "CloudSaver",
+  "description": "网盘资源搜索与转存工具：聚合搜索网盘资源并一键转存到自己的网盘，支持移动端与 PC 响应式使用",
+  "categories": [
+    "网盘工具"
+  ],
+  "icon": "icons/cloudsaver.png",
+  "author": "jiangrui1994",
+  "image": "jiangrui1994/cloudsaver:latest",
+  "default_stack_name": "cloudsaver",
+  "note": "安装后通过 http://NAS_IP:8008 访问。首次使用需在设置里添加网盘账号（涉及网盘 Cookie 等敏感凭据，请只用自己的部署，勿用第三方在线服务）。",
+  "compose_file": "apps/cloudsaver/compose.yml"
+}
