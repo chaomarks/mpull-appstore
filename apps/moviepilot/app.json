@@ -1,6 +1,6 @@
 {
   "id": "moviepilot",
-  "name": "MoviePilot",
+  "name": "moviepilot-v2",
   "description": "NAS 媒体库自动化管理：自动订阅与下载、整理刮削、站点签到与消息通知，可联动 qBittorrent/Transmission 与 Emby/Jellyfin/Plex",
   "categories": [
     "媒体服务"

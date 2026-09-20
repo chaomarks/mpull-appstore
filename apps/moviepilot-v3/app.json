@@ -1,0 +1,14 @@
+{
+  "id": "moviepilot-v3",
+  "name": "moviepilot-v3",
+  "description": "NAS 媒体库自动化管理：自动订阅与下载、整理刮削、站点签到与消息通知，可联动 qBittorrent/Transmission 与 Emby/Jellyfin/Plex",
+  "categories": [
+    "媒体服务"
+  ],
+  "icon": "icons/movie-pilot.png",
+  "author": "jxxghp",
+  "image": "jxxghp/moviepilot-v3:latest",
+  "default_stack_name": "moviepilot-v3",
+  "note": "安装后通过 http://NAS_IP:3000 访问。{{SUPERUSER_PASSWORD}}（初始登录密码）与 {{media_dir}}（媒体库目录）请在 compose 中填写。注意：端口 3000/3001 与 moviepilot-v2 相同，两者同时部署需改掉其中一个的端口映射。用户认证参考文档：https://wiki.movie-pilot.org/configuration",
+  "compose_file": "apps/moviepilot-v3/compose.yml"
+}
