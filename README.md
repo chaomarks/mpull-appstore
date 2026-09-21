@@ -31,6 +31,8 @@ mpull-appstore/
 
 compose 文件就是标准 docker compose YAML，在 GitHub 上可直接编辑并语法高亮。
 
+新模板的索引条目请**追加到 `apps.json` 的 `apps` 数组末尾**：数组顺序即上架顺序，模板中心默认倒序展示（最新上架的排最前）。
+
 ## 安装目录占位符
 
 compose 中宿主机路径可以用 `{{docker_root}}` 占位符，部署时会替换为用户在 MPull 设置中配置的「容器安装目录」，例如用户配置 `/vol4/1000/docker`，则：

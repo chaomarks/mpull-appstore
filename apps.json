@@ -3,17 +3,6 @@
   "updated_at": "2026-09-21",
   "apps": [
     {
-      "id": "libretv",
-      "name": "LibreTV",
-      "description": "在线视频聚合搜索与观看平台：多采集站聚合搜索、HLS 播放、IPTV 直播与观看进度本地保存",
-      "categories": [
-        "媒体服务"
-      ],
-      "icon": "icons/libretv.png",
-      "author": "bestzwei",
-      "image": "bestzwei/libretv:latest"
-    },
-    {
       "id": "lucky",
       "name": "Lucky",
       "description": "Lucky 大吉网络工具箱：反向代理、DDNS、端口转发、Web 服务、STUN 内网穿透、计划任务、网络测速等多合一轻量工具",
@@ -331,6 +320,17 @@
       "icon": "icons/movie-pilot.png",
       "author": "jxxghp",
       "image": "jxxghp/moviepilot-v3:latest"
+    },
+    {
+      "id": "libretv",
+      "name": "LibreTV",
+      "description": "在线视频聚合搜索与观看平台：多采集站聚合搜索、HLS 播放、IPTV 直播与观看进度本地保存",
+      "categories": [
+        "媒体服务"
+      ],
+      "icon": "icons/libretv.png",
+      "author": "bestzwei",
+      "image": "bestzwei/libretv:latest"
     }
   ]
 }
