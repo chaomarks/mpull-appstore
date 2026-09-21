@@ -1,0 +1,14 @@
+{
+  "id": "libretv",
+  "name": "LibreTV",
+  "description": "在线视频聚合搜索与观看平台：多采集站聚合搜索、HLS 播放、IPTV 直播与观看进度本地保存",
+  "categories": [
+    "媒体服务"
+  ],
+  "icon": "icons/libretv.png",
+  "author": "bestzwei",
+  "image": "bestzwei/libretv:latest",
+  "default_stack_name": "libretv",
+  "note": "安装后通过 http://NAS_IP:8080 访问，PASSWORD 为登录密码，需自行在 compose 中修改。服务无状态，升级时无需迁移数据。",
+  "compose_file": "apps/libretv/compose.yml"
+}
