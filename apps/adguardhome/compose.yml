@@ -1,0 +1,12 @@
+services:
+  adguardhome:
+    image: adguard/adguardhome
+    container_name: adguardhome
+    restart: always
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "3000:3000/tcp"
+    volumes:
+      - "{{docker_root}}/adguardhome/work:/opt/adguardhome/work"
+      - "{{docker_root}}/adguardhome/conf:/opt/adguardhome/conf"

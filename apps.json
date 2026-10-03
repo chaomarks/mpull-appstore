@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-21",
+  "updated_at": "2026-10-03",
   "apps": [
     {
       "id": "lucky",
@@ -331,6 +331,17 @@
       "icon": "icons/libretv.png",
       "author": "bestzwei",
       "image": "bestzwei/libretv:latest"
+    },
+    {
+      "id": "adguardhome",
+      "name": "AdGuard Home",
+      "description": "AdGuard Home 全网广告拦截：作为局域网 DNS 服务器在 DNS 层过滤广告与跟踪，支持自定义过滤规则、家长控制与查询统计",
+      "categories": [
+        "网络工具"
+      ],
+      "icon": "icons/adguardhome.png",
+      "author": "adguard",
+      "image": "adguard/adguardhome"
     }
   ]
 }

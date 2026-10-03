@@ -1,0 +1,14 @@
+{
+  "id": "adguardhome",
+  "name": "AdGuard Home",
+  "description": "AdGuard Home 全网广告拦截：作为局域网 DNS 服务器在 DNS 层过滤广告与跟踪，支持自定义过滤规则、家长控制与查询统计",
+  "categories": [
+    "网络工具"
+  ],
+  "icon": "icons/adguardhome.png",
+  "author": "adguard",
+  "image": "adguard/adguardhome",
+  "default_stack_name": "adguardhome",
+  "note": "安装后通过 http://NAS_IP:3000 打开初始化向导。53 是 DNS 端口，若宿主机已被占用（如系统 DNS 服务）需在 compose 中改映射（如 5053:53）。",
+  "compose_file": "apps/adguardhome/compose.yml"
+}
