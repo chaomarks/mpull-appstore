@@ -10,6 +10,9 @@ services:
       - PUID=0
       - PGID=0
       - TZ=Asia/Shanghai
+      # 用户名密码可选，配置后开启登录鉴权模块
+      - MDC_USERNAME=admin
+      - MDC_PASSWORD=admin
     volumes:
       - "{{docker_root}}/mdc/data:/config"
       # {{scrape_dir}} 请改为实际刮削文件目录，如 /vol4/1000/media
