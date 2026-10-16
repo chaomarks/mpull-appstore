@@ -1,6 +1,6 @@
 services:
   mdc:
-    container_name: mdc
+    container_name: mdc-ng
     restart: always
     network_mode: bridge
     ports:
