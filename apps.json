@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-03",
+  "updated_at": "2026-11-01",
   "apps": [
     {
       "id": "lucky",
@@ -342,6 +342,17 @@
       "icon": "icons/adguardhome.png",
       "author": "adguard",
       "image": "adguard/adguardhome"
+    },
+    {
+      "id": "qmediasync",
+      "name": "QMediaSync",
+      "description": "115 网盘媒体库同步管理工具：同步生成 STRM 交给 Emby 建库，支持元数据下载上传、直链播放与外网 302 播放，联动 Emby 刷新媒体库、删除网盘文件与入库通知",
+      "categories": [
+        "媒体服务"
+      ],
+      "icon": "icons/qmediasync.png",
+      "author": "qicfan",
+      "image": "qicfan/qmediasync:latest"
     }
   ]
 }

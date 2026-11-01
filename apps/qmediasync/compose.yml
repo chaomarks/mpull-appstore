@@ -1,0 +1,16 @@
+services:
+  qmediasync:
+    image: qicfan/qmediasync:latest
+    container_name: qmediasync
+    restart: always
+    network_mode: bridge
+    ports:
+      - 12333:12333
+      # Emby 302 直链播放端口
+      - 8095:8095
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - "{{docker_root}}/qmediasync/config:/app/config"
+      # {{media_dir}} 请改为实际媒体库目录，如 /vol4/1000/media
+      - "{{media_dir}}:/media"

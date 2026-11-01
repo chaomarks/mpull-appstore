@@ -1,0 +1,14 @@
+{
+  "id": "qmediasync",
+  "name": "QMediaSync",
+  "description": "115 网盘媒体库同步管理工具：同步生成 STRM 交给 Emby 建库，支持元数据下载上传、直链播放与外网 302 播放，联动 Emby 刷新媒体库、删除网盘文件与入库通知",
+  "categories": [
+    "媒体服务"
+  ],
+  "icon": "icons/qmediasync.png",
+  "author": "qicfan",
+  "image": "qicfan/qmediasync:latest",
+  "default_stack_name": "qmediasync",
+  "note": "安装后通过 http://NAS_IP:12333 访问管理页面，默认账号 admin / admin123。{{media_dir}} 请在 compose 中改为实际媒体库目录（如 115 网盘挂载目录）。8095 端口用于 Emby 302 直链播放。官网：https://qmediasync.cn/ GitHub：https://github.com/qicfan/qmediasync",
+  "compose_file": "apps/qmediasync/compose.yml"
+}
