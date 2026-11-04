@@ -28,10 +28,11 @@ services:
       # 留空=不鉴权；公网暴露时务必设置
       - mpass=
 
-      # 流参数：关闭必须写字符串 false（源码判断 != "false"）
-      # 浏览器/部分盒子黑屏无画面时把 menableH265 改成 false
-      - menableHDR=true
-      - menableH265=true
+      # 流参数：默认关闭；要开就取消注释并写 "true"
+      # 关闭必须写字符串 "false"（源码判断 != "false"）
+      # 浏览器/部分盒子黑屏无画面时保持 menableH265 关闭
+      # - menableHDR=true
+      # - menableH265=true
 
       # 节目单刷新间隔(小时)，别设太小，避免风控
       - mupdateInterval=6
