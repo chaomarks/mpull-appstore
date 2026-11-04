@@ -25,6 +25,7 @@ mpull-appstore/
 | `icon` | ✅ | 图标路径（相对仓库根目录，如 `icons/lucky.png`） |
 | `compose_file` | ✅ | compose 文件路径（相对仓库根目录，如 `apps/lucky/compose.yml`），推荐写法 |
 | `compose` | ➖ | 内联 compose YAML 字符串（旧写法，与 `compose_file` 二选一） |
+| `compose_variants` | ➖ | 多版本 compose：`[{"name": "精简版", "file": "apps/x/compose.yml"}, {"name": "完整版", "file": "apps/x/compose.full.yml"}]`，**第一个为默认版本**；部署弹窗顶部会出现版本切换按钮，点一下替换下方 compose（仍可手改） |
 | `default_stack_name` | ➖ | 默认 Stack 名，缺省用 `id` |
 | `note` | ➖ | 备注或安装注意事项，支持换行和长文本；GitHub 仓库地址会在 MPull 详情中显示为可点击图标 |
 | `author` / `image` | ➖ | 作者 / 主镜像 |
