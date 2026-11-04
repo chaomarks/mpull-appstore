@@ -1,0 +1,15 @@
+services:
+  migu_video:
+    image: develop767/migu_video:latest
+    container_name: migu_video
+    restart: always
+    network_mode: bridge
+    ports:
+      - 1234:1234
+    environment:
+      - TZ=Asia/Shanghai
+      # 账号可选（登录有封号风险）：填咪咕 userId / token 可解锁蓝光/原画/4K，
+      # 留空则不登录，rateType>=3 会自动回退 720P；获取方式见应用说明
+      - muserId=
+      - mtoken=
+      - mrateType=4

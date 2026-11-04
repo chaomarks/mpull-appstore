@@ -1,0 +1,55 @@
+services:
+  migu_video:
+    image: develop767/migu_video:latest
+    container_name: migu_video
+    restart: unless-stopped
+    network_mode: bridge
+    ports:
+      - 1234:1234
+    environment:
+      - TZ=Asia/Shanghai
+      # 容器内监听端口；改了必须同步改 ports 右侧
+      - mport=1234
+      # 公网/自定义访问地址，格式 http://IP:端口
+      - mhost=http://192.168.1.10:1234
+
+      # 账号（可选，登录有封号风险）
+      # muserId 为咪咕网页登录后获取的 userId
+      # mtoken 为咪咕网页登录后获取的 token
+      - muserId=
+      - mtoken=
+
+      # 画质：2=标清 3=高清(默认) 4=蓝光 7=原画 9=4K
+      # 4/7/9 需登录且账号有 VIP；未登录时 rateType>=3 会自动回退 720P
+      - mrateType=3
+
+      # 访问鉴权：建议只用大小写字母+数字
+      # 设置后地址变为 http://IP:端口/密码/interface.txt
+      # 留空=不鉴权；公网暴露时务必设置
+      - mpass=
+
+      # 流参数：关闭必须写字符串 false（源码判断 != "false"）
+      # 浏览器/部分盒子黑屏无画面时把 menableH265 改成 false
+      - menableHDR=true
+      - menableH265=true
+
+      # 节目单刷新间隔(小时)，别设太小，避免风控
+      - mupdateInterval=6
+
+      # 屏蔽分类，英文/中文逗号均可
+      # 特殊值：TV=屏蔽全部电视直播，PE=屏蔽全部体育
+      # 体育分类按天命名：体育-昨天 / 体育-今天 / 体育-明天
+      # - mignoreCategory=央视,卫视,体育-昨天,体育-明天
+
+      # 把频道数 <=11 的 TV 小分类自动并入“其他”
+      - mmergeTVCategory=true
+
+      # 自定义合并分类，逗号分隔
+      # 源码是 else if：只有 mmergeTVCategory 为 false 时才生效
+      # - mcustomMergeCategory=熊猫,综艺,新闻
+
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "3"

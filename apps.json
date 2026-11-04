@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-01",
+  "updated_at": "2026-11-04",
   "apps": [
     {
       "id": "lucky",
@@ -353,6 +353,17 @@
       "icon": "icons/qmediasync.png",
       "author": "qicfan",
       "image": "qicfan/qmediasync:latest"
+    },
+    {
+      "id": "migu-video",
+      "name": "Migu Video",
+      "description": "咪咕视频直播源生成工具：把咪咕视频的直播与回看频道转换为 IPTV 播放列表（interface.txt），可导入播放器或电视盒子观看，支持画质选择与访问密码",
+      "categories": [
+        "媒体服务"
+      ],
+      "icon": "icons/migu-video.png",
+      "author": "develop202",
+      "image": "develop767/migu_video:latest"
     }
   ]
 }

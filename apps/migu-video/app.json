@@ -1,0 +1,24 @@
+{
+  "id": "migu-video",
+  "name": "Migu Video",
+  "description": "咪咕视频直播源生成工具：把咪咕视频的直播与回看频道转换为 IPTV 播放列表（interface.txt），可导入播放器或电视盒子观看，支持画质选择与访问密码",
+  "categories": [
+    "媒体服务"
+  ],
+  "icon": "icons/migu-video.png",
+  "author": "develop202",
+  "image": "develop767/migu_video:latest",
+  "default_stack_name": "migu-video",
+  "note": "安装后访问 http://NAS_IP:1234/interface.txt 获取 IPTV 源；若设置了 mpass，地址为 http://NAS_IP:1234/密码/interface.txt。\n获取咪咕账号 ID 和 Token（可选，不填也能用）：登录 https://www.miguvideo.com → F12 打开开发者工具 → Application → Cookies → 找到 UserInfo，「|」前是 userId、「|」后是 token，填到 compose 的 muserId / mtoken。蓝光/原画/4K 需登录且账号有 VIP，未登录会自动回退 720P；登录有封号风险，请谨慎使用。\n部署弹窗顶部可切换「精简版 / 完整版」：完整版包含访问密码、分类屏蔽、HDR/H265 等高级参数。\n项目地址：https://github.com/develop202/migu_video",
+  "compose_file": "apps/migu-video/compose.yml",
+  "compose_variants": [
+    {
+      "name": "精简版",
+      "file": "apps/migu-video/compose.yml"
+    },
+    {
+      "name": "完整版",
+      "file": "apps/migu-video/compose.advanced.yml"
+    }
+  ]
+}
