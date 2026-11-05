@@ -63,6 +63,19 @@ volumes:
 
 MPull 安装弹窗会自动识别这些占位符：安装者直接修改弹窗中的 compose，把占位符替换为实际路径后部署；存在未填写的占位符时会拒绝部署并提示。占位符的说明可以直接写在 compose 的 `#` 注释里（注释行中的占位符不参与校验）。
 
+## 登录背景（login-bg/）
+
+本仓库同时提供 MPull 的远程登录背景：把图片（png / jpg / jpeg / webp / gif）或视频（mp4 / webm / ogv）放到 `login-bg/` 目录，再把文件名登记到根目录的 `login-bg.json`：
+
+```json
+{
+  "updated_at": "2026-11-05",
+  "files": ["whale.mp4", { "file": "wallpaper.webp", "name": "壁纸" }]
+}
+```
+
+MPull 的「设置 → 其他设置 → 登录背景 → 选择背景」会从**模板源仓库**（默认就是本仓库）读取这些文件并显示缩略图（10 分钟缓存，弹窗里点「刷新」立即生效），不需要重新打包镜像。Fork 本仓库并在 MPull 模板设置里换成自己的 fork 后，模板和登录背景会一起用你的仓库。
+
 ## 如何贡献应用
 
 Fork 本仓库 → 在 `apps/<app-id>/` 下添加 `app.json`（元数据）与 `compose.yml`（部署配置）、`icons/` 放图标、`apps.json` 加索引条目 → 提交 PR。第三方维护者也可以直接维护自己的 fork，并在 MPull 模板设置中添加 fork 仓库地址（格式 `用户名/仓库名`）。
