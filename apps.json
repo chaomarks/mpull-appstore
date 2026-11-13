@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-04",
+  "updated_at": "2026-11-13",
   "apps": [
     {
       "id": "lucky",
@@ -364,6 +364,17 @@
       "icon": "icons/migu-video.png",
       "author": "develop202",
       "image": "develop767/migu_video:latest"
+    },
+    {
+      "id": "openclaw",
+      "name": "OpenClaw",
+      "description": "自托管 AI 网关：把 Telegram、Discord、Slack、WhatsApp 等聊天渠道接入 AI Agent，自带 Web 控制台，支持多模型、工具调用与本地 Ollama",
+      "categories": [
+        "AI 工具"
+      ],
+      "icon": "icons/openclaw.png",
+      "author": "openclaw",
+      "image": "openclaw/openclaw:latest"
     }
   ]
 }
