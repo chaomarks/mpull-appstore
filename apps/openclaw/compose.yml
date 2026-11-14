@@ -4,16 +4,13 @@ services:
     container_name: openclaw
     restart: always
     network_mode: bridge
-
     environment:
       TZ: Asia/Shanghai
       HOME: /home/node
       # {{gateway_token}} 请改为自己的令牌，可用 openssl rand -hex 32 生成
       OPENCLAW_GATEWAY_TOKEN: "{{gateway_token}}"
-
     ports:
       - "18789:18789"
-
     volumes:
       # 主配置、SQLite、插件、渠道凭据
       - "{{docker_root}}/openclaw/config:/home/node/.openclaw"
@@ -21,5 +18,4 @@ services:
       - "{{docker_root}}/openclaw/workspace:/home/node/.openclaw/workspace"
       # OAuth 旧版凭据恢复密钥
       - "{{docker_root}}/openclaw/auth-profile-secrets:/home/node/.config/openclaw"
-
     command: ["node", "dist/index.js", "gateway", "--bind", "lan"]
