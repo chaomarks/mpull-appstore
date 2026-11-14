@@ -1,0 +1,14 @@
+{
+  "id": "langbot",
+  "name": "LangBot",
+  "description": "多平台 LLM 机器人框架：接入 QQ、微信、飞书、钉钉、Telegram、Discord 等消息平台，支持流水线编排、插件市场、知识库、MCP 与 Agent，自带 WebUI 管理面板",
+  "categories": [
+    "AI 工具"
+  ],
+  "icon": "icons/langbot.png",
+  "author": "langbot-app",
+  "image": "rockchin/langbot:latest",
+  "default_stack_name": "langbot",
+  "note": "安装后访问 http://NAS_IP:5300，首次打开按页面提示完成初始化。\n数据、插件和数据库都在 {{docker_root}}/langbot/data 下，备份这个目录即可。\n核心与插件运行时是两个容器（langbot / langbot_plugin_runtime），runtime 的服务名被核心默认配置写死（ws://langbot_plugin_runtime:5400/control/ws），不要改名，否则插件连不上。\n默认关闭 Box 沙箱（BOX__ENABLED=false）。需要沙箱执行能力时按官方 compose 增加 langbot_box 服务并挂载 /var/run/docker.sock，注意这等于把宿主机 Docker 控制权交给容器。\n国内拉取镜像慢，可把 image 换成 docker.langbot.app/langbot-public/rockchin/langbot:latest。\n项目地址：https://github.com/langbot-app/LangBot",
+  "compose_file": "apps/langbot/compose.yml"
+}

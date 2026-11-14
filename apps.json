@@ -386,6 +386,17 @@
       "icon": "icons/astrbot.png",
       "author": "AstrBotDevs",
       "image": "soulter/astrbot:latest"
+    },
+    {
+      "id": "langbot",
+      "name": "LangBot",
+      "description": "多平台 LLM 机器人框架：接入 QQ、微信、飞书、钉钉、Telegram、Discord 等消息平台，支持流水线编排、插件市场、知识库、MCP 与 Agent，自带 WebUI 管理面板",
+      "categories": [
+        "AI 工具"
+      ],
+      "icon": "icons/langbot.png",
+      "author": "langbot-app",
+      "image": "rockchin/langbot:latest"
     }
   ]
 }

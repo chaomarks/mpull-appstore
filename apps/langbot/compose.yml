@@ -1,0 +1,24 @@
+services:
+  langbot:
+    image: rockchin/langbot:latest
+    container_name: langbot
+    restart: always
+    ports:
+      - "5300:5300"           # WebUI / webhook
+      - "2280-2285:2280-2285" # 平台反向连接，不用可删
+    environment:
+      - TZ=Asia/Shanghai
+      - BOX__ENABLED=false
+    volumes:
+      - "{{docker_root}}/langbot/data:/app/data"
+  # 插件运行时，服务名被核心默认配置写死，不要改名
+  langbot_plugin_runtime:
+    image: rockchin/langbot:latest
+    container_name: langbot_plugin_runtime
+    restart: always
+    command: ["uv", "run", "--no-sync", "-m", "langbot_plugin.cli.__init__", "rt"]
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - "{{docker_root}}/langbot/data/plugins:/app/data/plugins"
+      - "{{docker_root}}/langbot/data/plugin-runtime:/app/data/plugin-runtime"
