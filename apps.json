@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-13",
+  "updated_at": "2026-11-14",
   "apps": [
     {
       "id": "lucky",
@@ -375,6 +375,17 @@
       "icon": "icons/openclaw.png",
       "author": "openclaw",
       "image": "openclaw/openclaw:latest"
+    },
+    {
+      "id": "astrbot",
+      "name": "AstrBot",
+      "description": "多平台 LLM 聊天机器人框架：接入 QQ、微信、Telegram、Discord、飞书等消息平台，支持大模型对话、插件市场、知识库与 Agent，自带 WebUI 管理面板",
+      "categories": [
+        "AI 工具"
+      ],
+      "icon": "icons/astrbot.png",
+      "author": "AstrBotDevs",
+      "image": "soulter/astrbot:latest"
     }
   ]
 }

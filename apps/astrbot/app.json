@@ -1,0 +1,14 @@
+{
+  "id": "astrbot",
+  "name": "AstrBot",
+  "description": "多平台 LLM 聊天机器人框架：接入 QQ、微信、Telegram、Discord、飞书等消息平台，支持大模型对话、插件市场、知识库与 Agent，自带 WebUI 管理面板",
+  "categories": [
+    "AI 工具"
+  ],
+  "icon": "icons/astrbot.png",
+  "author": "AstrBotDevs",
+  "image": "soulter/astrbot:latest",
+  "default_stack_name": "astrbot",
+  "note": "安装后访问 http://NAS_IP:6185 打开管理面板。用户名 astrbot，初始密码是首次启动时打印在容器日志里的随机串，登录后请立即修改；忘记密码可执行 docker exec -it astrbot astrbot password 重置。\n6199 是 OneBot v11 / NapCat 反向 WS 端口，不接 QQ 机器人可以在 compose 里删掉这一行。\n所有配置、插件和数据库都在 {{docker_root}}/astrbot/data 下，备份这个目录即可。\n国内拉取镜像慢，可把 image 换成 m.daocloud.io/docker.io/soulter/astrbot:latest（官方文档提供的镜像源）。\n项目地址：https://github.com/AstrBotDevs/AstrBot",
+  "compose_file": "apps/astrbot/compose.yml"
+}

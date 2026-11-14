@@ -1,0 +1,16 @@
+services:
+  astrbot:
+    image: soulter/astrbot:latest
+    container_name: astrbot
+    restart: always
+    network_mode: bridge
+
+    environment:
+      - TZ=Asia/Shanghai
+
+    ports:
+      - "6185:6185"   # WebUI 管理面板
+      - "6199:6199"   # OneBot v11 / NapCat 反向 WS，不接 QQ 机器人可删
+
+    volumes:
+      - "{{docker_root}}/astrbot/data:/AstrBot/data"
